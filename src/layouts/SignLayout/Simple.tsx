@@ -1,16 +1,16 @@
 import React from 'react';
 
+import styles from './Simple.less';
 import { SignContainer } from './components/Container';
 
-import styles from './Basic.less';
-
-// without animation
+// simple animation
 const BasicSignLayout: React.FC = () => {
   return (
     <SignContainer
       classNames={{
-        root: styles.basicContainer,
+        root: styles.simpleContainer,
       }}
+      withTransition
     />
   );
 };
