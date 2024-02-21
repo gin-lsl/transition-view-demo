@@ -7,7 +7,7 @@ import styles from './index.less';
 export const SignHeader: React.FC = () => {
   const loc = useLocation();
 
-  const isLoginPage = loc.pathname === '/sign/login';
+  const isLoginPage = loc.pathname.includes('/login');
 
   return (
     <div className={styles.container}>
@@ -27,9 +27,9 @@ export const SignHeader: React.FC = () => {
         shape="round"
         onClick={() => {
           if (isLoginPage) {
-            history.push('/sign/register');
+            history.push('./register');
           } else {
-            history.push('/sign/login');
+            history.push('./login');
           }
         }}
       >

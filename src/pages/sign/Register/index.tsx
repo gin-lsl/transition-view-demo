@@ -1,10 +1,11 @@
 import React from 'react';
-import { Button, Divider, Form, Input } from 'antd';
+import { Button, Divider, Form, Input, Typography } from 'antd';
 import styles from './index.less';
 
 const SignRegisterPage: React.FC = () => {
   return (
     <div className={styles.container}>
+      <Typography.Title>Create Account</Typography.Title>
       <Form layout="vertical" className={styles.form}>
         <Form.Item label="Email">
           <Input />

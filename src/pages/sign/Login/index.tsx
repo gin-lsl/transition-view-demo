@@ -1,4 +1,4 @@
-import { Button, Divider, Form, Input } from 'antd';
+import { Button, Divider, Form, Input, Typography } from 'antd';
 import React from 'react';
 
 import styles from './index.less';
@@ -6,6 +6,7 @@ import styles from './index.less';
 const LoginPage: React.FC = () => {
   return (
     <div className={styles.container}>
+      <Typography.Title>Log in to Demo</Typography.Title>
       <Form layout="vertical" className={styles.form}>
         <Form.Item label="Email">
           <Input />
