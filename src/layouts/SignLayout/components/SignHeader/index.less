@@ -4,7 +4,7 @@
   height: 60px;
   top: 0;
   right: 0;
-  left: 300px;
+  left: var(--marketing-ad-width, 0);
   z-index: 2;
   padding: 8px 28px;
   font-size: 14px;
@@ -12,6 +12,11 @@
   align-items: center;
   gap: 16px;
   box-sizing: border-box;
+  view-transition-name: sign-header;
+
+  @media (max-width: 768px) {
+    left: 0;
+  }
 
   .back {
   }

@@ -6,7 +6,9 @@ export const startViewTransition = (callback: VoidFunction) => {
   }
 
   // @ts-ignore
-  document.startViewTransition(callback);
+  return document.startViewTransition(callback) as {
+    finished: Promise<void>;
+  };
 }
 
 function isBackNavigation(navigateEvent: Event) {

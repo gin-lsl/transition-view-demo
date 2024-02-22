@@ -2,6 +2,7 @@ import { Button } from 'antd';
 import React from 'react';
 import { Link, Outlet, history } from 'umi';
 
+import { startViewTransition } from '@/utils/transition';
 import styles from './index.less';
 
 const HomeLayout: React.FC = () => {
@@ -26,7 +27,9 @@ const HomeLayout: React.FC = () => {
           ghost
           type="primary"
           onClick={() => {
-            history.push('/basic-sign/login');
+            startViewTransition(() => {
+              history.push('/simple-sign/login');
+            });
           }}
         >
           Log In

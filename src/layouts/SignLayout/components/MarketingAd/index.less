@@ -1,0 +1,22 @@
+.container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  .content {
+    height: 100vh;
+    aspect-ratio: 676 / 1032;
+  }
+
+  .img {
+    width: 676px;
+    height: 1032px;
+  }
+}

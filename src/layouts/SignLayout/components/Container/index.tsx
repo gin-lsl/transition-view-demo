@@ -17,7 +17,13 @@ interface SignContainerProps {
 // sign common container
 export const SignContainer: React.FC<SignContainerProps> = (props) => {
   return (
-    <div className={styles.signLayout + ' ' + props.classNames.root}>
+    <div
+      className={styles.signLayout + ' ' + props.classNames.root}
+      style={{
+        // @ts-ignore
+        '--marketing-ad-width': '676px',
+      }}
+    >
       <div className={styles.layoutContainer}>
         <MarketingAd />
 

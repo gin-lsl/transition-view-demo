@@ -10,7 +10,7 @@ const BasicSignLayout: React.FC = () => {
       classNames={{
         root: styles.simpleContainer,
       }}
-      withTransition
+      withTransition={false}
     />
   );
 };
